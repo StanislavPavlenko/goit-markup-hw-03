@@ -15,8 +15,6 @@
 /* Акцент #e7e9fc;*/
 /* Бек #f4f4fd; */
 
-/* Стилізація ./index.html */
-
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white-color);
@@ -44,7 +42,7 @@ body {
   margin: -1px;
 }
 
-.conteiner {
+.container {
   width: 100%;
   max-width: 1128px;
   margin: 0 auto;
@@ -53,6 +51,16 @@ body {
 
 img {
   display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
 /* Стилізація ./index.html */
@@ -134,14 +142,18 @@ img {
 }
 
 .section-features {
-  background-color: var(--white-color);\
+  background-color: var(--white-color);
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 .section-features-title {
 }
+
 .section-features-list {
 }
+
 .section-features-item {
+  display: block;
 }
 .section-features-subtitle {
   font-weight: 500;
@@ -149,6 +161,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 .section-features-text {
   font-size: 16px;
@@ -157,9 +171,7 @@ img {
   color: var(--minor-color);
 }
 .section-doing {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  
+  margin-bottom: 120px;
 }
 .section-doing-title {
   font-weight: 700;
@@ -168,6 +180,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-bottom: 72px;
 }
 .section-doing-list {
 }
@@ -177,6 +190,8 @@ img {
 }
 .section-team {
   background-color: var(--btn-background-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .section-team-title {
   font-size: 36px;
@@ -184,6 +199,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-bottom: 72px;
 }
 .section-team-list {
 }
@@ -207,6 +223,8 @@ img {
 }
 .footer {
   background-color: var(--basic-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-logo > span {
   color: var(--logo-color);
@@ -218,6 +236,7 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--btn-background-color);
+  margin-bottom: 16px;
 }
 .footer-text {
   font-size: 16px;
@@ -227,6 +246,11 @@ img {
 }
 
 /* Стилізація ./portfolio.html */
+
+.portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 
 .section-btn {
 }
@@ -239,6 +263,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--logo-color);
+  margin-bottom: 72px;
 }
 .btn:hover,
 .btn:focus {
