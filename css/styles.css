@@ -44,8 +44,23 @@ body {
   margin: -1px;
 }
 
+.conteiner {
+  width: 100%;
+  max-width: 1128px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+img {
+  display: block;
+}
+
+/* Стилізація ./index.html */
+
 .header {
   background-color: var(--white-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-navigation {
 }
@@ -60,6 +75,7 @@ body {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 24px;
 }
 .header-list {
 }
@@ -73,6 +89,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-bottom: 24px;
 }
 .header-address:hover,
 .header-address:focus {
@@ -85,10 +102,13 @@ body {
   line-height: 1.5px;
   letter-spacing: 0.02em;
   color: var(--minor-color);
+  margin-bottom: 24px;
 }
 
 .section-hero {
   background-color: var(--basic-color);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .section-hero-title {
   font-size: 56px;
@@ -114,6 +134,8 @@ body {
 }
 
 .section-features {
+  background-color: var(--white-color);\
+  margin-top: 120px;
 }
 .section-features-title {
 }
@@ -135,6 +157,9 @@ body {
   color: var(--minor-color);
 }
 .section-doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
 }
 .section-doing-title {
   font-weight: 700;
