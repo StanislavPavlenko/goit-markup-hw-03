@@ -65,10 +65,13 @@ h6 {
 
 /* Стилізація ./index.html */
 
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   background-color: var(--white-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-navigation {
 }
@@ -83,10 +86,23 @@ h6 {
   line-height: 1.33;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-bottom: 24px;
+  margin-right: auto;
 }
 .header-list {
+  display: flex;
+  margin-left: 76px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
+.header-item {
+  margin-right: 40px;
+}
+
+.header-item:last-child {
+  margin: 0;
+}
+
 .header-link:hover,
 .header-link:focus {
   color: var(--btn-hover-color);
@@ -97,33 +113,55 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--basic-color);
-  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
 }
 .header-address:hover,
 .header-address:focus {
   color: var(--btn-hover-color);
 }
 .header-address {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5px;
   letter-spacing: 0.02em;
   color: var(--minor-color);
-  margin-bottom: 24px;
+}
+
+.header-address-list {
+  display: flex;
+  margin-left: 332px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.header-address-item {
+  margin-right: 40px;
+}
+
+.header-address-item:last-child {
+  margin: 0;
 }
 
 .section-hero {
   background-color: var(--basic-color);
   padding-top: 188px;
   padding-bottom: 188px;
+  text-align: center;
 }
 .section-hero-title {
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  margin-bottom: 48px;
+  text-align: center;
 }
 .section-hero-btn {
   font-family: inherit;
@@ -150,10 +188,20 @@ h6 {
 }
 
 .section-features-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .section-features-item {
-  display: block;
+  margin-right: 24px;
+  display: inline-block;
+  width: 264px;
+}
+
+.section-features-item:last-child {
+  margin: 0;
 }
 .section-features-subtitle {
   font-weight: 500;
@@ -183,6 +231,9 @@ h6 {
   margin-bottom: 72px;
 }
 .section-doing-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
 }
 .section-doing-item {
 }
@@ -202,6 +253,10 @@ h6 {
   margin-bottom: 72px;
 }
 .section-team-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  text-align: center;
 }
 .section-team-item {
   background-color: var(--white-color);
@@ -214,12 +269,16 @@ h6 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 .section-team-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--minor-color);
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
 .footer {
   background-color: var(--basic-color);
@@ -237,19 +296,20 @@ h6 {
   letter-spacing: 0.03em;
   color: var(--btn-background-color);
   margin-bottom: 16px;
+  display: inline-block;
 }
 .footer-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  width: 264px;
+  padding-left: 0;
 }
 
 /* Стилізація ./portfolio.html */
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
 }
 
 .section-btn {
@@ -263,12 +323,35 @@ h6 {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--logo-color);
-  margin-bottom: 72px;
 }
 .btn:hover,
 .btn:focus {
   background-color: var(--btn-hover-color);
   color: var(--white-color);
+}
+
+.btn-list {
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 96px;
+  margin-bottom: 72px;
+}
+
+.btn-item {
+  margin-right: 24px;
+}
+.btn-item:last-child {
+  margin: 0;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .portfolio-item {
@@ -281,10 +364,16 @@ h6 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--basic-color);
+  margin-left: 16px;
+  margin-top: 32px;
+  margin-bottom: 0;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--minor-color);
+  margin-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 32px;
 }
