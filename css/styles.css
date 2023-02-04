@@ -76,6 +76,7 @@ h6 {
   background-color: var(--white-color);
 }
 .header-navigation {
+  margin-right: auto;
 }
 .header-logo > span {
   color: var(--logo-color);
@@ -141,8 +142,6 @@ h6 {
 
 .header-address-list {
   display: flex;
-  justify-content: flex-end;
-  margin-left: 332px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
