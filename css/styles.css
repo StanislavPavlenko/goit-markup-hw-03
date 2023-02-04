@@ -351,7 +351,6 @@ ul {
   color: var(--logo-color);
   border: 1px solid var(--accent-color);
   border-radius: 4px;
-  margin-bottom: 72px;
 }
 .btn:hover,
 .btn:focus {
@@ -363,6 +362,7 @@ ul {
 .btn-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 72px;
 }
 
 .btn-item {
